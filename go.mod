@@ -1,4 +1,4 @@
-module testutil
+module github.com/umk/go-testutil
 
 require (
 	github.com/Workiva/go-datastructures v1.0.50 // indirect
