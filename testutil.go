@@ -14,7 +14,9 @@ var fix string
 // perform the tests, but also update the files these tests depend on. The value
 // returned by this function is declared via the command line:
 //	go test <...> -ldflags="-X 'github.com/umk/go-testutil.fix=fix'"
-// Use a makefile or a script to run this command for better experience.
+// When the `fix` variable value equals to "fix", the function returns `true`,
+// and otherwise `false`. Use a makefile or a script to run the test command
+// with this parameter for better experience.
 //
 // After the files have been updated, check with a source control by diff'ing
 // with the current version, that your xxx_test.go have made the proper changes
