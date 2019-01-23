@@ -26,11 +26,3 @@ func EqualDiff(t *testing.T, expected, actual string, fn string)
 ```
 
 EqualDiff checks specified two strings for equality. If they are not equal, its diff is printed to the standard output with the expected value identified by `fn`, which is supposed to be a file name, where the expected value has been loaded from.
-
-### Lfsr28
-
-Lfsr28 is a 28-bit linear-feedback shift register which generates an m-sequence. From [Wikipedia](https://en.wikipedia.org/wiki/Maximum_length_sequence):
-
-> They are bit sequences generated using maximal linear feedback shift registers and are so called because they are periodic and reproduce every binary sequence (except the zero vector) that can be represented by the shift registers (i.e., for length-m registers they produce a sequence of length 2<sup>m</sup> − 1). 
-
-Use this to produce a pseudo-random sequence of numbers to implement reproducible tests.
